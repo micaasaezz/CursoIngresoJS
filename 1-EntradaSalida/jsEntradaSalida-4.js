@@ -4,6 +4,6 @@
 */
 function Mostar()
 {
-	
+	alert("este es el 4");
 }
 
