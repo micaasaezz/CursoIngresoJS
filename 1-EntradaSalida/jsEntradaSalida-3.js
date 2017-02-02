@@ -2,9 +2,11 @@
 y luego mostrarlo por 'Alert' al presionar el botón  'MOSTRAR'*/
 function Mostar()
 {
+	
 	var nombre;
-	nombre=document.getElementById('elNombre').value;
-	alert (nombre);
+	nombre=document.getElementById('elNombre').value; //g tecla tab shift i
+	alert ("el nombre igresado es: "+nombre);
+
 }
 
 
