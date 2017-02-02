@@ -2,6 +2,10 @@
 ej.: "Usted se llama José y tiene 66 años" 	*/
 function Mostar()
 {	
-	
+	var nombre;
+	var edad;
+	nombre=getElementById('elNombre').value;
+	edad=getElementById('laEdad').value;
+	alert("usted se llama "+nombre+" y tiene"+edad+"años");
 }
 
