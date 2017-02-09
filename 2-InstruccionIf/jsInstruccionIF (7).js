@@ -11,7 +11,7 @@ function Mostrar()
 
 	if(edad<18 && estadoCivil!="Soltero"){
 		document.write("Es muy pequeño para NO ser soltero"); 
-		//parecido a alert, misma funcion
+		//parecido a alert, misma funcion pero lo muestr dif
 	}
 	
 
