@@ -59,10 +59,12 @@ function PrecioFinal ()
 
 	suma=preciouno+preciodos+preciotres;
 	
-	/*
-	promedio=suma+21%
+	suma = parseInt(suma);
 
-	falta sacar el promedio
-	*/
+	precioFinal = suma*1.21;
+
+	alert(precioFinal);
+
+	
 
 }
