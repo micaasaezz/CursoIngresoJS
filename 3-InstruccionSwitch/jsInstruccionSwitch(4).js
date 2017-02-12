@@ -5,6 +5,7 @@ function Mostrar()
 
 	//alert (mesDelAño);
 
+
 	switch (mesDelAño)
 	{
 		case "Febrero":
@@ -30,8 +31,26 @@ function Mostrar()
 
 	}
 	
-	
 
+	
+	/*
+ 
+ 	switch(mesDelAño)
+ 	{
+ 			case "Febrero":
+ 			alert("Tiene 28 días");
+ 			break;
+
+ 			default:
+ 			if(mesDelAño == "Abril" || mesDelAño == "Junio" || mesDelAño == "Septiembre" || mesDelAño == "Noviembre")
+ 				{alert("Tiene 30 dias");}
+ 			else{ alert(" Tiene 31 dias");}
+ 			break;
+
+
+ 	}
+
+	*/
 
 
 }//FIN DE LA FUNCIÓN
