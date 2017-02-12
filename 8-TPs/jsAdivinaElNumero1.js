@@ -13,14 +13,35 @@ var contadorIntentos;
 function comenzar()
 {
 	//Genero el número RANDOM entre 1 y 100
+	numeroSecreto = parseInt(numeroSecreto);
+	numeroSecreto = Math.floor((Math.random() * 100) + 1);
 	 
-		//alert(numeroSecreto );
+		//alert(numeroSecreto);
+
+	console.log(numeroSecreto);
+
+	contadorIntentos=0;
+
+	document.getElementById('intentos').value = contadorIntentos;
 	
 
 }
 
 function verificar()
 {
-	
+	contadorIntentos = contadorIntentos+1;
+	document.getElementById('intentos').value = contadorIntentos;
+
+	var numeroIngresado = document.getElementById('numero').value;
+
+	if(numeroIngresado == numeroSecreto){
+		alert("Sos un genio.");
+	}
+	else{
+		if(numeroIngresado > numeroSecreto){
+			alert("Te pasaste!");
+		}
+		else{ alert("Te falta un toque.");}
+	}
 	
 }
