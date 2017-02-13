@@ -12,6 +12,7 @@ function CalcularPrecio ()
 { //A.
  	var cantidadLamparitas;
  	var precioLamparitas = 35;
+ 	var marcaLamparitas;
 
  	cantidadLamparitas = document.getElementById('Cantidad').value;
  	cantidadLamparitas = parseInt(cantidadLamparitas);
@@ -19,11 +20,22 @@ function CalcularPrecio ()
 	precio = cantidadLamparitas*precioLamparitas;
  	
  	if(cantidadLamparitas>=6){
- 		precio = precio/2;
+ 		precio = precio*0.50;
 
  		document.getElementById('precioDescuento').value = precio;
  	}
 
+ 	if(cantidadLamparitas == 5 && marcaLamparitas == "ArgentinaLuz"){
+ 		precio = precio*0.40;
+
+ 		document.getElementById('precioDescuento').value = precio;
+ 	}
+ 	else{ precio = precio*0.30;
+
+ 		document.getElementById('precioDescuento').value = precio;
+ 	}
+
+ 	
  	
 }
 
