@@ -35,7 +35,14 @@ function CalcularPrecio ()
  		document.getElementById('precioDescuento').value = precio;
  	}
 
- 	
- 	
+ 	if(cantidadLamparitas == 4 && marcaLamparitas == "ArgentinaLuz" !! marcaLamparitas == "FelipeLamparas"){
+ 		precio = precio*0.25; 
+ 		document.getElementById('precioDescuento').value = precio;
+ 	}
+ 	else{precio = precio*0.20;
+ 		document.getElementById('precioDescuento').value = precio;
+ 	}
+
+
 }
 

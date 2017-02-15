@@ -14,7 +14,7 @@ function Rectangulo ()
 
 	parseInt(largoTerreno+anchoTerreno);
 
-	alambre = (((largoTerreno*2)+(anchoTerreno*2))*3);
+	alambre = (((largoTerreno + anchoTerreno)*2)*3);
 
 	alert("la cantidad de alambre que se necesita es "+alambre);
 
@@ -22,12 +22,38 @@ function Rectangulo ()
 
 function Circulo () 
 {
-	
+	var radioTerreno;
+
+	radioTerreno = document.getElementById('Radio').value;
+
+	radioTerreno = parseInt(radioTerreno);
+
+	cantALambre = (radioTerreno*3); 
+
+	alert("La cantidad de alambre que se necesita es "+cantALambre);
 	
 }
 
 function Materiales () 
 {
+	var largoTerreno;
+	var anchoTerreno;
+	var cemento;
+	var cal;
+
+	largoTerreno = document.getElementById('Largo').value;
+	anchoTerreno = document.getElementById('Ancho').value;
+
+	parseInt(largoTerreno+anchoTerreno);
+
+	cemento = ((largoTerreno*anchoTerreno)*2);
+	cal = ((largoTerreno*anchoTerreno)*3);
+
+	alert("Se necesitan "+cemento+" bolsas de cemento y "+cal+" bolsas de cal");
 	
 	
+
+
+
+
 }
