@@ -31,6 +31,17 @@ function Mostrar()
 
 	}
 
+/*
+	
+		if(mesDelAño == "Enero" || mesDelAño == "Febrero" || mesDelAño == "Marzo" || mesDelAño == "Abril" || mesDelAño == "Mayo" || mesDelAño == "Junio")
+		{alert("falat p el frio");}
+		else{
+			if(mesDelAño == "Julio" || mesDelAño == "Agosto")
+				{ alert("Abrogate que hace frio"); } 
+			else{ alert("ya pasó el frio, ahora calor"); }
+			} 
 
+*/
+	
 
 }//FIN DE LA FUNCIÓN
