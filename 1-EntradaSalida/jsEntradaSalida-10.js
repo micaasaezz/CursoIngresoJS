@@ -10,12 +10,14 @@ function MostrarAumento()
 
 	importe=parseInt(importe);
 
-	Descuento=importe*25/100;
+	Descuento=importe*0.25;
     Descuento=parseInt(Descuento);
 
 	resultado=importe-Descuento;
 
-	alert(resultado);
+	//alert(resultado);
+
+	document.getElementById('resultado').value = resultado;
 
 
 }
