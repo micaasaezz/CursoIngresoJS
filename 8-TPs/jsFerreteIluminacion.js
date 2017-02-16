@@ -12,29 +12,32 @@ function CalcularPrecio ()
 { //A.
  	var cantidadLamparitas;
  	var precioLamparitas = 35;
- 	var marcaLamparitas;
+ 	var marcaLamparitas = document.getElementById('Marca').value;
 
  	cantidadLamparitas = document.getElementById('Cantidad').value;
  	cantidadLamparitas = parseInt(cantidadLamparitas);
 	
 	precio = cantidadLamparitas*precioLamparitas;
  	
+ 	//A
  	if(cantidadLamparitas>=6){
  		precio = precio*0.50;
 
  		document.getElementById('precioDescuento').value = precio;
  	}
 
+
+ 	//B
  	if(cantidadLamparitas == 5 && marcaLamparitas == "ArgentinaLuz"){
  		precio = precio*0.40;
 
  		document.getElementById('precioDescuento').value = precio;
  	}
  	else{ precio = precio*0.30;
-
  		document.getElementById('precioDescuento').value = precio;
  	}
 
+ 	//C
  	if(cantidadLamparitas == 4 && marcaLamparitas == "ArgentinaLuz" !! marcaLamparitas == "FelipeLamparas"){
  		precio = precio*0.25; 
  		document.getElementById('precioDescuento').value = precio;
@@ -43,6 +46,29 @@ function CalcularPrecio ()
  		document.getElementById('precioDescuento').value = precio;
  	}
 
+ 	//D
+ 	if(cantidadLamparitas == 3 && marcaLamparitas == "ArgentinaLuz"){
+ 		precio = precio*0.15;
+ 		document.getElementById('precioDescuento').value = precio;
+ 	}
+ 	else{
+ 		if(marcaLamparitas == "FelipeLamparas"){
+ 			precio = precio*0.10;
+ 		}
+ 		else{ 
+ 			precio = precio*0.05;
+ 		}
+ 	}
+
+ 	//E
+ 	if(precio>"120"){
+ 		precio = precio*1.1;
+ 		document.getElementById("precioDescuento").value = precio;
+ 		alert("IIBB Usted pagó "+precio);
+ 	}
+ 	else{
+ 		document.getElementById("precioDescuento").value = precio;
+ 	}
 
 }
 
