@@ -18,7 +18,77 @@ function CalcularPrecio ()
  	cantidadLamparitas = parseInt(cantidadLamparitas);
 	
 	precio = cantidadLamparitas*precioLamparitas;
- 	
+
+	//A
+	if(cantidadLamparitas>=6){
+ 		precio = precio*0.50;
+
+ 		document.getElementById('precioDescuento').value = precio;
+ 	}
+
+ 	switch(cantidadLamparitas){
+		
+		//B
+ 		case "5": 
+ 			if(marcaLamparitas == "ArgentinaLuz"){
+ 				precio = precio*0.6;
+ 			}
+ 			else{
+ 				precio = precio*0.7;
+ 			}
+
+ 			break;
+
+ 		//C
+ 		case "4":
+ 			if(marcaLamparitas == "ArgentinaLuz" ||  marcaLamparitas == "FelipeLamparas"){
+ 				precio = precio*0.75;
+ 			}
+ 			else{
+ 				precio = precio*0.8;
+ 			}
+
+ 			break;
+
+ 		//D
+ 		case "3":
+ 			if(marcaLamparitas == "ArgentinaLuz"){
+ 				precio = precio*0.85;
+ 			}
+ 			else{
+ 				if(marcaLamparitas == "FelipeLamparas"){
+ 					precio = precio*0.9;
+ 				}
+ 				else{
+ 					precio = precio*0.95;
+ 				}
+ 			}
+
+ 			break;
+
+
+ 	}
+
+ 	//E
+ 	if(precio>"120"){
+ 		precio = precio*1.1;
+ 		document.getElementById("precioDescuento").value = precio;
+ 		impuesto = precio*0.1;
+ 		alert("IIBB Usted pagó "+impuesto);
+ 	}
+ 	else{
+ 		document.getElementById("precioDescuento").value = precio;
+ 	}
+
+
+
+
+
+
+
+
+
+ 	/*
  	//A
  	if(cantidadLamparitas>=6){
  		precio = precio*0.50;
@@ -69,6 +139,6 @@ function CalcularPrecio ()
  	else{
  		document.getElementById("precioDescuento").value = precio;
  	}
-
+*/
 }
 
