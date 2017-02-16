@@ -31,16 +31,21 @@ function Mostrar()
 			{
 				contCero++;
 			}
-		if(numero%2==0)
+		}
+		if(numero%2==0){
+
+		} //num par
+		else{}//num impar
 
 		
-	}
-	promedio=????
+	
+	
 
 		respuesta = prompt("Ingresar otro numero? si/no");
 	
 	}
 
+	promedio=????
 
  	document.write("hola");
 
