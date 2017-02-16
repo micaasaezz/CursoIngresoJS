@@ -11,5 +11,6 @@ function Mostrar()
 		//cantidad++;
 	}
 
+	//lo que esta en comentarios es por si quiero ponerle un limite a la cantidad de veces que pongo la clave.
 
 }//FIN DE LA FUNCIÓN
