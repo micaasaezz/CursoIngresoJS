@@ -15,13 +15,74 @@ var contadorIntentos;
 function comenzar()
 {
 	//Genero el número RANDOM entre 1 y 100
-	 
+	numeroSecreto = parseInt(numeroSecreto);
+	numeroSecreto = Math.floor((Math.random() * 100) + 1);
 	
+	//alert(numeroSecreto);
+
+	console.log(numeroSecreto);
+
+	contadorIntentos=0;
+
+	document.getElementById('intentos').value = contadorIntentos;
 
 }
 
 function verificar()
 {
+	contadorIntentos = contadorIntentos+1;
+	document.getElementById('intentos').value = contadorIntentos;
+
+	contadorIntentos =parseInt(contadorIntentos);
+
+	var numeroIngresado = document.getElementById('numero').value;
+
+	if(numeroIngresado == numeroSecreto){
+
+		switch(contadorIntentos){	
+
+			case 1: 
+				alert("Usted es un Psíquico");
+				break;
+
+			case 2:
+				alert("Excelente percepción");
+				break;
+
+			case 3:
+				alert("Esto es suerte");
+				break;
+
+			case 4:
+				alert("Excelente técnica");
+				break;
+
+			case 5:
+				alert("Usted está en la media");
+				break;
+
+			case 6:
+			case 7:
+			case 8:
+			case 9:
+			case 10:
+				alert("falta técnica");
+				break;
+
+			default: 
+				alert("Afortunado en el amor!!");
+				break;
+
+		}	
+	}
+	else{
+		if(numeroIngresado > numeroSecreto){
+			alert("Te pasaste!");
+		}
+		else{ alert("Te falta un toque.");
+		}
+	}
+
 	
 	
 
