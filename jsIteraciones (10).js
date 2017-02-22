@@ -4,10 +4,13 @@ function Mostrar()
 	var contador=0;
 	//declarar contadores y variables
 	var numero;
-	var sumaNegativos;
-	var sumaPositivos;
+	var sumaNegativos=0;
+	var sumaPositivos=0;
 	var acumuladorPositivos=0;
 	var acumuladorNegativos=0;
+	var contCero=0;
+	var contNumPares=0;
+	//var contNumImpares=0;
 	
 	var respuesta="si";
 
@@ -17,11 +20,13 @@ function Mostrar()
 		numero = prompt("ingrese numero");
 		numero = parseInt(numero);
 		
-		if(numero<0){
+		if(numero<0)
+		{
 			sumaNegativos = sumaNegativos+numero;
 			acumuladorNegativos++;
 		}
-		else{
+		else
+		{
 			if(numero>0)
 			{
 				sumaPositivos = sumaPositivos+numero;
@@ -32,22 +37,31 @@ function Mostrar()
 				contCero++;
 			}
 		}
-		if(numero%2==0){
 
+		if(numero%2==0 && numero!=0){
+			contNumPares++;
 		} //num par
-		else{}//num impar
 
-		
-	
-	
+		/*
+		else{
+			contNumImpares++;
+		}//num impar
+		*/
+
+
 
 		respuesta = prompt("Ingresar otro numero? si/no");
 	
 	}
 
-	promedio=????
+	promedioPos = sumaPositivos/acumuladorPositivos;
+	promedioNeg = sumaNegativos/acumuladorNegativos;
 
- 	document.write("hola");
+	diferencia = sumaPositivos + sumaNegativos; //si se pone menos el positivo-(- negativo) se anula el menos y queda mas.
 
+ 	document.write("La suma de los negativos es "+sumaNegativos+".<br /> La suma de los positivos es "+sumaPositivos+".<br /> La cantidad de positivos es "+acumuladorPositivos+". <br />La cantidad de negativos es "+acumuladorNegativos+". <br />La cantidad de ceros es "+contCero+".<br /> La cantidad de numeros pares es "+contNumPares+". <br />El promedio de numeros positivos es "+promedioPos+".<br /> El promedio de numeros negativos es "+promedioNeg+".<br /> La diferencia entre numeros positivos y numeros negativos es "+diferencia+".");
+
+
+	// <br /> es el salto de linea en el html
 
 }//FIN DE LA FUNCIÓN
