@@ -38,7 +38,7 @@ function Mostrar()
 			}
 		}
 
-		if(numero%2==0){
+		if(numero%2==0 && numero!=0){
 			contNumPares++;
 		} //num par
 
