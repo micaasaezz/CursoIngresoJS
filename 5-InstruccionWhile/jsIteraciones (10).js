@@ -20,11 +20,13 @@ function Mostrar()
 		numero = prompt("ingrese numero");
 		numero = parseInt(numero);
 		
-		if(numero<0){
+		if(numero<0)
+		{
 			sumaNegativos = sumaNegativos+numero;
 			acumuladorNegativos++;
 		}
-		else{
+		else
+		{
 			if(numero>0)
 			{
 				sumaPositivos = sumaPositivos+numero;
@@ -39,6 +41,7 @@ function Mostrar()
 		if(numero%2==0){
 			contNumPares++;
 		} //num par
+
 		/*
 		else{
 			contNumImpares++;
@@ -56,9 +59,9 @@ function Mostrar()
 
 	diferencia = sumaPositivos - sumaNegativos;
 
- 	document.write("La suma de los negativos es "+sumaNegativos+". La suma de los positivos es "+sumaPositivos+". La cantidad de positivos es "+acumuladorPositivos+". La cantidad de negativos es "+acumuladorNegativos+". La cantidad de ceros es "+contCero+". La cantidad de numeros pares es "+contNumPares+". El promedio de numeros positivos es "+promedioPos+". El promedio de numeros negativos es "+promedioNeg+". La diferencia entre numeros positivos y numeros negativos es "+diferencia+".");
+ 	document.write("La suma de los negativos es "+sumaNegativos+".<br /> La suma de los positivos es "+sumaPositivos+".<br /> La cantidad de positivos es "+acumuladorPositivos+". <br />La cantidad de negativos es "+acumuladorNegativos+". <br />La cantidad de ceros es "+contCero+".<br /> La cantidad de numeros pares es "+contNumPares+". <br />El promedio de numeros positivos es "+promedioPos+".<br /> El promedio de numeros negativos es "+promedioNeg+".<br /> La diferencia entre numeros positivos y numeros negativos es "+diferencia+".");
 
 
-
+	// <br /> es el salto de linea en el html
 
 }//FIN DE LA FUNCIÓN
