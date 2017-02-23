@@ -57,7 +57,7 @@ function Mostrar()
 	promedioPos = sumaPositivos/acumuladorPositivos;
 	promedioNeg = sumaNegativos/acumuladorNegativos;
 
-	diferencia = sumaPositivos - sumaNegativos;
+	diferencia = sumaPositivos + sumaNegativos; //si se pone menos el positivo-(- negativo) se anula el menos y queda mas.
 
  	document.write("La suma de los negativos es "+sumaNegativos+".<br /> La suma de los positivos es "+sumaPositivos+".<br /> La cantidad de positivos es "+acumuladorPositivos+". <br />La cantidad de negativos es "+acumuladorNegativos+". <br />La cantidad de ceros es "+contCero+".<br /> La cantidad de numeros pares es "+contNumPares+". <br />El promedio de numeros positivos es "+promedioPos+".<br /> El promedio de numeros negativos es "+promedioNeg+".<br /> La diferencia entre numeros positivos y numeros negativos es "+diferencia+".");
 
